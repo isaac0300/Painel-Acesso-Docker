@@ -1,0 +1,29 @@
+Painel de Acesso — Projeto Modelo
+===================================
+
+Sistema simples com tela de login (usuário e senha) protegendo um painel
+de registros. Usa o MESMO padrão de login do Projeto Sentinela: usuário
+e senha comparados direto contra o que está gravado no backend/db.json
+(sem hash, sem sessão — propositalmente simples, o foco de hoje é
+Docker, não segurança de login).
+
+Login de teste já cadastrado no db.json:
+
+  usuário: admin
+  senha:   123456
+
+O código já está pronto e funcionando. Faltam DE PROPÓSITO:
+
+  - Dockerfile
+  - docker-compose.yml
+
+É a atividade de hoje: seguir o "Manual — Aula 6" e criar os dois
+arquivos na raiz desta pasta. Depois, aplicar exatamente o mesmo
+raciocínio no Projeto Sentinela de vocês.
+
+Para rodar sem Docker, só para conferir que o código funciona:
+
+  npm install
+  npm start
+
+E abrir http://localhost:3002
